@@ -1,3 +1,7 @@
+- 取得檔案
+```
+git clone https://github.com/grimreaperes00/ELK.git
+```
 - 進入檔案下
 ```
 cd ELK/AQUA-CARE-2025-June-main/

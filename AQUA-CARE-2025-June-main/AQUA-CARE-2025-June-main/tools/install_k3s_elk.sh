@@ -55,19 +55,19 @@ sleep 1
 # ====== [階段 5] 安裝 ELK 服務 ======
 echo "[5/5] 安裝 ELK 服務..."
 helm repo update
-sleep 30
+sleep 10
 echo "安裝 elasticsearch..."
 helm upgrade --install elasticsearch elastic/elasticsearch -f elasticsearch/values.yml
-sleep 30
+sleep 10
 echo "安裝 filebeat..."
 helm upgrade --install filebeat elastic/filebeat -f filebeat/values.yml
-sleep 30
+sleep 10
 echo "安裝 logstash..."
 helm upgrade --install logstash elastic/logstash -f logstash/values.yml
-sleep 30
+sleep 10
 echo "安裝 kibana..."
 helm upgrade --install kibana elastic/kibana -f kibana/values.yml
-sleep 30
+sleep 10
 
 echo "ELK 服務安裝完成！"
 sleep 1

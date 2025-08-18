@@ -279,13 +279,14 @@ lifecycle:
 
 service:
   annotations: {}
-  type: ClusterIP
+  type: NodePort
   loadBalancerIP: ""
   ports:
     - name: beats
       port: 5044
       protocol: TCP
       targetPort: 5044
+      nodePort: 30544
     - name: http
       port: 8080
       protocol: TCP
